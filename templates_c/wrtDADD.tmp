@@ -1,0 +1,73 @@
+<?php /* Smarty version Smarty-3.0.6, created on 2017-04-03 10:00:48
+         compiled from ".\templates\register.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2559858e21d50169658-41769718%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '5e9489e0e0cf9cf9b13f913ba886d8ccac28fd30' => 
+    array (
+      0 => '.\\templates\\register.tpl',
+      1 => 1491213642,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2559858e21d50169658-41769718',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+<head>
+<?php $_template = new Smarty_Internal_Template("config.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
+	<title>拾客>注册</title>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+<?php $_template = new Smarty_Internal_Template("header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
+	<!-- main start -->
+	<div id="main">
+		<div class="container">
+			<form action="?action=post" method="post" class="contentLeft">
+				<h3>快速注册</h3>
+				<p>注册成为拾客用户，获得更快速的交互体验！</p>
+				<p id="warning"><?php echo $_smarty_tpl->getVariable('warning')->value;?>
+</p>
+				<table class="formTable" >
+					<tr><th>用户名</th><td><input type="text" name="username" id="username" value="<?php echo $_smarty_tpl->getVariable('form')->value['username'];?>
+" maxlength="12"/>
+						<span id="checkusername" class="check"></span>
+						<p class="tip">可以是字母和数字，至少5位，必须以字母开关，不区分大小写。</p>
+						<button type="button" name="checkavailable" id="checkavailable">检查用户是否可用</button>
+						<input type="hidden" name="available" id="available" value="0"/></td></tr>
+					<tr><th>密码</th><td><input type="password" name="password" id="password"/>
+						<span id="checkpassword" class="check"></span></td></tr>
+					<tr><th>确认密码</th><td><input type="password" id="repasswd"/>
+						<span id="checkrepasswd" class="check"></span></td></tr>
+					<tr><th>邮箱</th><td><input type="text" name="email" id="email" value="<?php echo $_smarty_tpl->getVariable('form')->value['email'];?>
+"/>
+						<span id="checkemail" class="check"></span>
+						<p class="tip">请准确填写邮箱，忘记密码时会发送邮件到该邮箱。</p></td></tr>
+					<tr><th>服务条款</th><td><div id="rule" overflow="auto">
+					
+					</div><label><input type="checkbox" id="accede"/>我已阅读并同意以上服务条款</label></td></tr>
+					<tr><th>验证码</th><td><img src="include/verify.php" id="verifyimg" title="刷新" onclick="changecode()"/>
+						<p class="tip">请输入图中的数字</p>
+						<input type="text" name="verifycode" id="verifycode"/>
+						<span id="checkverifycode" class="check"></span></td></tr>
+					<tr><th></th><td><button type="submit" id="regbtn" class="submit">马上注册</button></td></tr>
+				</table>
+				<h3>已经拥有帐号？</h3>
+				<p>如果您已拥有拾客帐号，请使用已有的帐号信息直接进行<a href="login.php">登录</a>即可，不需要重复注册。</p>
+			</form>
+			<div class="clearBoth"></div>
+		</div>
+	</div>
+	<!-- main ends -->
+<?php $_template = new Smarty_Internal_Template("footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
+</body>
+</html>

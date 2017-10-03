@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+.contentLeft h2 {margin-bottom: 20px; line-height: 1em;}
+.contentLeft h3 {margin: 20px 0;}
+.contentLeft h4 {color: #333; text-indent: 2em; font-weight: bold; margin-bottom: 10px;}
+.contentLeft p {color: #333; text-indent: 2em; font-size: 12px;}
+.contentLeft em {text-decoration: underline; font-style:normal;}
+.contentLeft span {color: black; font-weight: bold;}
+.contentLeft .imgtip {color: gray; font-size: 12px; margin: 5px 0;}
+.contentLeft .floatImg {width: 50%; float: left; margin: 0 1em 1em 0;}
+ 

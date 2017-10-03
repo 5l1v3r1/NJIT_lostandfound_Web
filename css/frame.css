@@ -1,0 +1,172 @@
+/* global elemtns */
+
+* {margin: 0; padding: 0;}
+html, body {width: 100%; height: 100%;}
+body {font-size: 14px; font-family: tahoma,arial,verdana,sans-serif;
+		line-height: 1.5em; position: relative;}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: none;}
+a {color: black;}
+
+ul li {list-style-position: inside;}
+ol li {list-style-position: inside;}
+
+/* construct elements */
+ 
+.container {position: relative; width: 760px; margin: 0 auto;}
+.contentLeft {float: left; position: relative; width: 540px; margin: 0 20px 20px 0;}
+.contentLeft h2 {margin-bottom: 15px;}
+.contentLeft h3 {margin-bottom: 10px;}
+.contentLeft p {margin-bottom: 10px; color: gray;}
+.contentRight {float: right; width: 200px; margin-bottom: 20px;}
+.contentRight h3 {margin: 10px 0;}
+.contentRight p {margin-bottom: 10px; color: gray;}
+.contentRight ul li {padding-left: 1em;}
+
+.formTable {width: 100%; margin: 10px 0; border-spacing: 10px;}
+.formTable th {width: 6em; text-align: right; vertical-align: top;}
+.formTable input {width: 150px; margin-right: 5px; border: 1px solid #CCC;}
+.formTable label {}
+.formTable table{border-collapse: collapse;}
+.formTable textarea{width: 20em; height: 5em;}
+.formTable .radio {width: auto; border: none;}
+.formTable .checkbox{width: auto;}
+.formTable .file {width: auto;}
+.formTable .tip {margin: 5px 0; font-size: 12px; color: #666;}
+.formTable .check {font-size: 12px; color: #F60;}
+.formTable .submit {border: none; padding: 5px 10px; color: #FFF; background: #F60;}
+.formTable .submit {_padding: 1px 5px; /* ie6 */}
+
+.clearBoth {clear: both;}
+.clearLeft {clear: left;}
+.clearRight {clear: right;}
+
+.floatLeft {float: left;}
+.floatRight {float: right;}
+
+.pipe {margin: 0 5px;}
+
+#warning {color: red;}
+
+.browser{padding:10px; border: 2px solid #F00; background: #FF9; text-align: center;}
+
+.ui-widget h3 {margin: 0; border: 1px solid #79B7E7;}
+
+/* header elements */
+
+#header {width: 100%; height: 150px; margin-bottom: 20px;
+			border-bottom: 2px solid #275b7d; color: #FFF;
+			background: #336699  right bottom no-repeat;}
+			
+	#logo {position: absolute; left: -200px; width: 420px; height: 110px;margin-top: 20px;
+				background-image: url(../images/logo.png);}
+	#header h1 {position: absolute; top: 30px; width: 180px; font-family: 微软雅黑,黑体;
+					text-align: center; font-size: 42px; line-height: 42px; color: #FFF;}
+	#header h2 {position: absolute; top: 80px; width: 180px;
+					text-align: center; font-size: 1em; line-height: 1em; font-weight: normal; color: #FFF;}
+	#header a {color: #FFF;}
+	
+	/* navigation */
+	#nav {
+	position: absolute;
+	top: 56px;
+	left: 324px;
+	right: 40px;
+	height: 34px;
+}
+	#nav li {float: left; margin-right: 0.8em; list-style-type: none; font-size: 1.5em;}
+	
+	#nav a:hover {color: #336699; background: #FFF;}
+	
+	#nav .now {border-bottom: 2px solid;}
+	
+	/* search */
+	/* search */
+	#searchbox {position: absolute; top: 124px; left: 324px;}
+	#keyword {float:left; width: 100px; height: 14px; padding: 3px;
+				border: 1px solid #FFF; border-top-left-radius: 5px 5px; border-bottom-left-radius: 5px 5px;}
+	#searchbtn {float:left; width: 50px; height: 22px;
+				border: 1px solid #FFF; border-top-right-radius: 5px 5px; border-bottom-right-radius: 5px 5px;
+				background-color: #F60; color:#FFF;}
+		
+#login {
+	position: absolute;
+	top: 114px;
+	right: -147px;
+	padding: 0 10px 3px;
+	width: 280px;
+	height: 33px;
+}
+
+/* main elements */
+
+#main {width: 100%;}
+
+	/* index page */
+
+	#intro {padding: 10px 20px; width: 500px; border-radius: 5px;
+			font-size: 16px; color: #045; background-color: #AFDDE9;}
+	
+	/* enter */	
+	#enter {width: 532px;}
+	#enter div {text-align: right;}
+	#enter em {font-size: 1.5em; font-weight: bold; margin: 0 5px;}
+	#enter div a {color: #FFF;}
+		.postit {margin: -5px 0 0 10px; padding: 5px 10px; border-radius: 5px;
+					color: #FFF; background-color: #F60;}
+	
+	#tagcloud ul li {float: left; margin-right: 10px;}
+	
+	#index_map_canvas {height: 300px; background-color: #EEE;}
+	
+	/* register/login page */	
+	#rule {height: 10em; margin-bottom: 10px; overflow: auto; border: 1px solid #CCC;
+				color: #333; font-size: 12px;}
+				
+	#accede {width: auto; border: none;}
+	
+	/* post page */	
+	#post_map_canvas {height: 300px; margin: 5px 0 10px; background-color: #EEE;}
+	#describe {height: 3em;}
+	
+	/* lost and found page */
+	#listbox {padding: 15px; border: 10px solid #08A;
+				-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+	#itemlist a {font-weight: bold;}
+	#itemlist p {color: #AAA;}
+	#itemlist .who,
+	#itemlist .where {font-weight: normal;}
+	#itemlist .tag {font-weight: normal; color: gray;}
+	#itemlist li {list-style-type: none; list-style-position: outside; color: #666;}
+	#itemlist li img {vertical-align: text-bottom;}
+	#itemlist li:hover {background: #EEE;}
+	#items_map_canvas {height: 400px; background-color: #EEE;}
+	#pagenav a {padding: 3px 5px;}
+	#pagenav .current {background: #F60; color: white;}
+	
+	/* item page */
+	.itemTable {width: 100%; margin: 5px 0;}
+	.itemTable th,
+	.itemTable td {padding: 5px;}
+	.itemTable th {width: 5em; text-align: right; vertical-align: top;}
+	.itemTable .imageCol {width: 130px; vertical-align: top;}
+	#done {position: absolute; top: 20px; left: -30px;}
+	#image {border: 1px dashed #CCC; padding: 4px; background: #FFF;}
+	.image-fixed {width: 120px;}
+	.image-hover {position: absolute; z-index:100; right: 40px; width: 400px;}
+	#item_map_canvas {height: 200px; background-color: #EEE;}
+	
+	/* user page */
+	#contact li {font-size: 12px; margin-bottom: 5px;}
+	#contact li:hover {background: #EEE;}
+	#contact li span {margin-right: 5px; font-weight: bold;}	
+		 
+/* footer elements */
+
+#footer {width: 100%; padding: 1em 0; background-color: #08A; color: #FFF;}
+	#copyright {float: left;}
+	#link {float: right;}
+	#footer a {color: #FFF;}
